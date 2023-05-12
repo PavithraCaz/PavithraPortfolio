@@ -1,0 +1,36 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    user-select: none;
+}
+
+/* Toggle button */
+#nav-mobile-btn.close span:first-child {
+    transform: rotate(45deg);
+    top: 4px;
+    position: relative;
+    background-image: linear-gradient(to right, #E37677 0%, #C51F67 100%), radial-gradient(circle at top left, #E37677, #C51F67);
+
+}
+
+#nav-mobile-btn.close span:nth-child(2) {
+    transform: rotate(-45deg);
+    margin-top: 0px;
+    background-image: linear-gradient(to right, #E37677 0%, #C51F67 100%), radial-gradient(circle at top left, #E37677, #C51F67);
+
+}
+
+.gradient {
+    background-image: linear-gradient(to right, #E37677 0%, #C51F67 100%), radial-gradient(circle at top left, #E37677, #C51F67);
+
+}
+
+/* Active button */
+header nav a.active {
+    color: #C51F67;
+}

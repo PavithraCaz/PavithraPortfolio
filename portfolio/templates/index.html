@@ -1,0 +1,716 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Meta start -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta content="" name="keywords" />
+	<meta content="" name="description" />
+	<!-- Meta end -->
+	<title>Pavithra Caz</title>
+	<!-- Link start -->
+	<link rel="icon" href="{% static 'img/Untitled-3-01.jpg' %}">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+		rel="stylesheet">
+	<!-- <link as="style"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@400;500;600;700&display=swap"
+        rel="preload" /> -->
+	<link
+		href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@400;500;600;700&display=swap"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.9.2/tailwind.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<!-- Link end -->
+
+	<!-- Script start -->
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script>
+		tailwind.config = {
+			theme: {
+				fontFamily: {
+					header: ["Raleway", "sans-serif"],
+					body: ["Montserrat", "sans-serif"],
+				},
+				fontSize: {
+					'7.5xl': '5rem',
+					'10xl': '7.5rem',
+				},
+				extend: {
+					colors: {
+						primary: "#C51F67",
+						secondary: "#E37677",
+						light: "#fffafc",
+					},
+					boxShadow: {
+						'3xl': '0 10px 20px -10px rgba(197, 31, 103 ,0.2)',
+						'0xl': '0 10px 20px -10px rgba(0, 0, 0 ,0.2)',
+						'4md': '0.8rem 0.8rem 1.4rem rgba(197, 31, 103 ,0.2), -0.2rem -0.2rem 1.8rem rgb(255,255,255)',
+					},
+				},
+			},
+		};
+	</script>
+	<!-- Script end -->
+</head>
+
+<body>
+	<button onclick="topFunction()"
+		class="hidden fixed md:bottom-8 bottom-2 md:right-8 right-2 z-50 bg-light hover:bg-primary hover:text-light text-primary focus:outline-none border-primary border rounded"
+		id="scrollBtn" title="Go to top">
+		<i class="bx bx-chevron-up text-3xl md:block hidden"></i>
+		<i class="bx bx-chevron-up text-3xl md:hidden block"></i>
+	</button>
+	<!-- Header start -->
+	<header class="relative z-50 w-full md:h-20 h-16 bg-white sticky top-0 shadow-3xl">
+		<div
+			class="container items-center flex md:justify-between justify-start mx-auto h-full max-w-7xl xl:px-0 lg:px-14 md:px-10 px-5">
+			<a href="" class="text-primary font-bold font-body text-xl sm:text-2xl md:text-3xl">Pavithra Caz</a>
+			<nav id="nav"
+				class="navigation md:relative absolute top-0 left-0 items-center md:flex flex md:flex-row flex-col justify-between hidden md:w-auto w-full md:h-0 h-64 md:p-0 p-4 md:mt-0 mt-16 md:text-base text-sm text-black md:bg-none bg-white md:shadow-none shadow-3xl">
+				<a href="#home"
+					class="font-medium md:text-base sm:text-sm text-xs font-body duration-100 lg:mr-8 md:mr-4 mr-0 transition-color hover:text-primary ">Home</a>
+				<a href="#about"
+					class="font-medium md:text-base sm:text-sm text-xs font-body duration-100 lg:mr-8 md:mr-4 mr-0 transition-color hover:text-primary">About</a>
+				<a href="#services"
+					class="font-medium md:text-base sm:text-sm text-xs font-body duration-100 lg:mr-8 md:mr-4 mr-0 transition-color hover:text-primary">Services</a>
+				<a href="#portfolio"
+					class="font-medium md:text-base sm:text-sm text-xs font-body duration-100 lg:mr-8 md:mr-4 mr-0 transition-color hover:text-primary">Portfolio</a>
+				<a href="#work"
+					class="font-medium md:text-base sm:text-sm text-xs font-body duration-100 lg:mr-8 md:mr-4 mr-0 transition-color hover:text-primary">Work</a>
+				<a href="#contact"
+					class="font-medium md:text-base sm:text-sm text-xs font-body duration-100 lg:mr-8 md:mr-4 mr-0 transition-color hover:text-primary">Contact</a>
+
+			</nav>
+			<div id="nav-mobile-btn"
+				class="absolute top-0 right-0 z-50 md:hidden block w-6 cursor-pointer select-none md:mt-10 mt-5 mr-5">
+				<span class="block w-full h-1 mt-2 sm:mt-1 duration-200 transform gradient rounded-full"></span>
+				<span class="block w-full h-1 mt-1 duration-200 transform gradient rounded-full"></span>
+			</div>
+		</div>
+	</header>
+	<!-- Header end -->
+
+	<!-- Main start -->
+	<main class="w-full ">
+		<!-- Section 1 start -->
+		<section id="home" class="w-full xl:relative bg-light">
+			<div class="container mx-auto max-w-7xl xl:px-0 lg:px-14 md:px-10 px-5 md:py-40 py-20">
+				<div class="flex flex-col items-center justify-center lg:flex-row">
+					<div class="rounded-full border-8 border-primary shadow-4md">
+						<img src="{% static 'img/caz.jpg' %}" class="h-48 rounded-full sm:h-56" alt="author" />
+					</div>
+					<div class="pt-8 sm:pt-10 lg:pl-8 lg:pt-0">
+						<h1 class="text-center font-body text-4xl sm:text-left sm:text-5xl md:text-6xl">
+							Hello, I'm Pavithra!
+						</h1>
+						<div class="flex flex-col justify-center pt-3 sm:flex-row sm:pt-5 lg:justify-start">
+							<div class="flex items-center justify-center pl-0 sm:justify-start md:pl-1">
+								<p class="font-body md:text-lg sm:text-base text-base text-lg uppercase text-black">
+									Let's connect</p>
+								<i class="bx bx-chevron-right text-3xl text-primary hidden sm:block"></i>
+							</div>
+							<div class="flex items-center justify-center pt-5 pl-2 sm:justify-start sm:pt-0">
+								<a href="https://www.instagram.com/pavithracaz" target="_blank" class="pl-4">
+									<i
+										class="flex items-center bx bxl-instagram text-2xl text-black hover:text-primary"></i>
+								</a>
+								<a href="https://www.linkedin.com/in/pavithracaz" target="_blank" class="pl-4">
+									<i
+										class="flex items-center bx bxl-linkedin text-2xl text-black hover:text-primary"></i>
+								</a>
+								<a href="https://github.com/PavithraCaz" target="_blank" class="pl-4">
+									<i
+										class="flex items-center bx bxl-github text-2xl text-black hover:text-primary"></i>
+								</a>
+								<a href="https://www.behance.net/pavithracaz" target="_blank" class="pl-4">
+									<i
+										class="flex items-center bx bxl-behance text-2xl text-black hover:text-primary"></i>
+								</a>
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="about" class="w-full xl:relative bg-white">
+			<div class="container mx-auto max-w-7xl xl:px-0 lg:px-14 md:px-10 px-5 md:py-20 py-10">
+				<div class="text-center mx-auto">
+					<h2 class="md:text-3xl sm:text-2xl text-xl font-medium text-black">About</h2>
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+						x="0px" y="0px" viewBox="0 0 100 60" style="margin: 0 auto;height: 35px;" xml:space="preserve">
+						<circle cx="50.1" cy="30.4" r="5" class="stroke-primary"
+							style="fill: transparent;stroke-width: 2;stroke-miterlimit: 10;"></circle>
+						<line x1="55.1" y1="30.4" x2="100" y2="30.4" class="stroke-primary"
+							style="stroke-width: 2;stroke-miterlimit: 10;"></line>
+						<line x1="45.1" y1="30.4" x2="0" y2="30.4" class="stroke-primary"
+							style="stroke-width: 2;stroke-miterlimit: 10;"></line>
+					</svg>
+					<!-- <p class="font-normal md:text-xl sm:text-lg text-base mx-auto py-2">LET’S
+                        INTRODUCE ABOUT
+                        MYSELF.</p> -->
+					<p class="text-gray-500 font-light md:text-base sm:text-sm text-xs mx-auto md:pt-8 sm:py-4 py-2">
+						I work as a Frontend Developer and UI UX Designer.
+						I enjoy designing and coding beautifully simple things.
+						I also enjoy sharing Web Development knowledge that I have gained over the years in order to
+						help other members of the Dev Community.
+						I'm looking for opportunities where I can contribute, learn, and grow. Please contact me if you
+						have a suitable position that matches my skills and expertise.
+
+					</p>
+					<div class="text-center mt-6">
+						<a class="md:py-2.5 py-1.5 md:px-10 px-5 inline-block font-medium md:text-base sm:text-sm text-xs text-center text-white border borde-primary bg-primary hover:text-primary hover:border-primary hover:bg-white"
+							href="{% static 'img/Pavithra-Resume.pdf' %}" download>
+							Download CV
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="services" class="w-full xl:relative bg-light">
+			<div class="container mx-auto max-w-7xl xl:px-0 lg:px-14 md:px-10 px-5 md:py-20 py-10">
+				<div class="text-center mx-auto">
+					<h2 class="md:text-3xl sm:text-2xl text-xl font-medium text-black">Services</h2>
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+						x="0px" y="0px" viewBox="0 0 100 60" style="margin: 0 auto;height: 35px;" xml:space="preserve">
+						<circle cx="50.1" cy="30.4" r="5" class="stroke-primary"
+							style="fill: transparent;stroke-width: 2;stroke-miterlimit: 10;"></circle>
+						<line x1="55.1" y1="30.4" x2="100" y2="30.4" class="stroke-primary"
+							style="stroke-width: 2;stroke-miterlimit: 10;"></line>
+						<line x1="45.1" y1="30.4" x2="0" y2="30.4" class="stroke-primary"
+							style="stroke-width: 2;stroke-miterlimit: 10;"></line>
+					</svg>
+					<div class="lg:flex lg:justify-between text-center md:pt-8 sm:pt-4 pt-2">
+						<div class="md:px-6 px-4 max-w-full w-full wow fadeInUp" data-wow-duration="1s">
+							<!-- service block 1-->
+							<div
+								class="py-12 px-10 my-4 bg-white shadow-3xl transform transition duration-300 ease-in-out hover:-translate-y-2">
+								<div class="inline-block text-primary pb-4">
+									<!-- icon -->
+									<img src="{% static 'img/FD-01.png' %}" alt="Code">
+								</div>
+								<h3 class="md:text-xl sm:text-lg text-base pb-2 font-medium text-black">FRONTEND
+									DEVELOPMENT
+								</h3>
+								<p class="text-gray-500 md:text-base sm:text-sm text-xs pb-2">UI Developer who
+									develops code that is clean, elegant, and efficient.
+									I enjoy writing code from scratch, maintaining a strict coding standard and bringing
+									ideas to life in the browser.
+
+
+
+
+
+								</p>
+								<div class="mb-1 md:text-base sm:text-sm text-xs text-left font-medium dark:text-black">
+									HTML & CSS</div>
+								<div class="w-full bg-gray rounded-full h-2.5 mb-4 dark:bg-gray-200">
+									<div class="bg-gray-600 h-2.5 rounded-full dark:bg-primary" style="width: 90%">
+									</div>
+								</div>
+								<div class="mb-1 md:text-base sm:text-sm text-xs text-left font-medium dark:text-black">
+									JavaScript & jQuery</div>
+								<div class="w-full bg-gray rounded-full h-2.5 mb-4 dark:bg-gray-200">
+									<div class="bg-gray-600 h-2.5 rounded-full dark:bg-primary" style="width: 50%">
+									</div>
+								</div>
+							</div> <!-- end service block 1-->
+						</div>
+
+						<div class="md:px-6 px-4 max-w-full w-full wow fadeInUp" data-wow-duration="1s">
+							<!-- service block 1-->
+							<div
+								class="py-12 px-10 my-4 bg-white shadow-3xl transform transition duration-300 ease-in-out hover:-translate-y-2">
+								<div class="inline-block text-primary pb-4">
+									<!-- icon -->
+									<img src="{% static 'img/UI-01.png' %}" alt="UI">
+								</div>
+								<h3 class="md:text-xl sm:text-lg text-base pb-2 font-medium text-black">UI UX DESIGN
+								</h3>
+								<p class="text-gray-500 md:text-base sm:text-sm text-xs pb-2">User Interface Designer
+									with a
+									specialisation on UI design and design systems. Simple content structure, clean
+									design patterns, and meaningful interactions are important to me.
+
+
+								</p>
+								<div class="mb-1 md:text-base sm:text-sm text-xs text-left font-medium dark:text-black">
+									Figma</div>
+								<div class="w-full bg-gray rounded-full h-2.5 mb-4 dark:bg-gray-200">
+									<div class="bg-gray-600 h-2.5 rounded-full dark:bg-primary" style="width: 70%">
+									</div>
+								</div>
+								<div class="mb-1 md:text-base sm:text-sm text-xs text-left font-medium dark:text-black">
+									Adobe XD</div>
+								<div class="w-full bg-gray rounded-full h-2.5 mb-4 dark:bg-gray-200">
+									<div class="bg-gray-600 h-2.5 rounded-full dark:bg-primary" style="width: 40%">
+									</div>
+								</div>
+							</div> <!-- end service block 1-->
+						</div>
+
+						<div class="md:px-6 px-4 max-w-full w-full wow fadeInUp" data-wow-duration="1s">
+							<!-- service block 1-->
+							<div
+								class="py-12 px-10 my-4 bg-white shadow-3xl transform transition duration-300 ease-in-out hover:-translate-y-2">
+								<div class="inline-block text-primary pb-4">
+									<!-- icon -->
+									<img src="{% static 'img/GD-01.png' %}" alt="Design">
+								</div>
+								<h3 class="md:text-xl sm:text-lg text-base pb-2 font-medium text-black">GRAPHIC DESIGN
+								</h3>
+								<p class="text-gray-500 md:text-base sm:text-sm text-xs pb-6">Creative Graphic Designer
+									who takes
+									great pride in the presentation and quality of the work.
+
+
+								</p>
+								<div class="mb-1 md:text-base sm:text-sm text-xs text-left font-medium dark:text-black">
+									Adobe Illustrator</div>
+								<div class="w-full bg-gray rounded-full h-2.5 mb-4 dark:bg-gray-200">
+									<div class="bg-gray-600 h-2.5 rounded-full dark:bg-primary" style="width: 80%">
+									</div>
+								</div>
+								<div class="mb-1 md:text-base sm:text-sm text-xs text-left font-medium dark:text-black">
+									Adobe Photoshop</div>
+								<div class="w-full bg-gray rounded-full h-2.5 mb-4 dark:bg-gray-200">
+									<div class="bg-gray-600 h-2.5 rounded-full dark:bg-primary" style="width: 70%">
+									</div>
+								</div>
+								<div class="mb-1 md:text-base sm:text-sm text-xs text-left font-medium dark:text-black">
+									Adobe InDesign</div>
+								<div class="w-full bg-gray rounded-full h-2.5 mb-4 dark:bg-gray-200">
+									<div class="bg-gray-600 h-2.5 rounded-full dark:bg-primary" style="width: 60%">
+									</div>
+								</div>
+							</div> <!-- end service block 1-->
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="portfolio" class="w-full xl:relative bg-white">
+			<div class="container mx-auto max-w-7xl xl:px-0 lg:px-14 md:px-10 px-5 md:py-20 py-10">
+				<div class="text-center mx-auto">
+					<h2 class="md:text-3xl sm:text-2xl text-xl font-medium text-black">Portfolio</h2>
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+						x="0px" y="0px" viewBox="0 0 100 60" style="margin: 0 auto;height: 35px;" xml:space="preserve">
+						<circle cx="50.1" cy="30.4" r="5" class="stroke-primary"
+							style="fill: transparent;stroke-width: 2;stroke-miterlimit: 10;"></circle>
+						<line x1="55.1" y1="30.4" x2="100" y2="30.4" class="stroke-primary"
+							style="stroke-width: 2;stroke-miterlimit: 10;"></line>
+						<line x1="45.1" y1="30.4" x2="0" y2="30.4" class="stroke-primary"
+							style="stroke-width: 2;stroke-miterlimit: 10;"></line>
+					</svg>
+					<div
+						class="mx-auto grid w-full grid-cols-1 gap-8 md:pt-8 sm:py-4 py-2 sm:w-3/4 md:gap-10 lg:w-full lg:grid-cols-2">
+						<a href="https://sravanahearingaidcentre.com" target="_blank"
+							class="mx-auto transform transition-all hover:scale-105 md:mx-0">
+							<img src="{% static 'img/Sravana.jpg' %}" class="w-full shadow" alt="portfolio image" />
+						</a>
+						<a href="https://globalbrandings.com" target="_blank"
+							class="mx-auto transform transition-all hover:scale-105 md:mx-0">
+							<img src="{% static 'img/Global.jpg' %}" class="w-full shadow" alt="portfolio image" />
+						</a>
+						<a href="https://pavithracaz.com" target="_blank"
+							class="mx-auto transform transition-all hover:scale-105 md:mx-0">
+							<img src="{% static 'img/pc.jpg' %}" class="w-full shadow" alt="portfolio image" />
+						</a>
+						<a href="https://cakiyo.com" target="_blank"
+							class="mx-auto transform transition-all hover:scale-105 md:mx-0">
+							<img src="{% static 'img/Cakiyo.jpg' %}" class="w-full shadow" alt="portfolio image" />
+						</a>
+						<a href="/" target="_blank" class="mx-auto transform transition-all hover:scale-105 md:mx-0">
+							<img src="{% static 'img/Kilban.jpg' %}" class="w-full shadow" alt="portfolio image" />
+						</a>
+						<a href="/" target="_blank" class="mx-auto transform transition-all hover:scale-105 md:mx-0">
+							<img src="{% static 'img/Pixbit.jpg' %}" class="w-full shadow" alt="portfolio image" />
+						</a>
+						<a href="/" target="_blank" class="mx-auto transform transition-all hover:scale-105 md:mx-0">
+							<img src="{% static 'img/pet.jpg' %}" class="w-full shadow" alt="portfolio image" />
+						</a>
+						<a href="/" target="_blank" class="mx-auto transform transition-all hover:scale-105 md:mx-0">
+							<img src="{% static 'img/safe.jpg' %}" class="w-full shadow" alt="portfolio image" />
+						</a>
+					</div>
+				</div>
+		</section>
+
+		<section id="work" class="w-full xl:relative bg-light">
+			<div class="container mx-auto max-w-7xl xl:px-0 lg:px-14 md:px-10 px-5 md:py-20 py-10">
+				<div class="text-center mx-auto">
+					<h2 class="md:text-3xl sm:text-2xl text-xl font-medium text-black">Work</h2>
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+						x="0px" y="0px" viewBox="0 0 100 60" style="margin: 0 auto;height: 35px;" xml:space="preserve">
+						<circle cx="50.1" cy="30.4" r="5" class="stroke-primary"
+							style="fill: transparent;stroke-width: 2;stroke-miterlimit: 10;"></circle>
+						<line x1="55.1" y1="30.4" x2="100" y2="30.4" class="stroke-primary"
+							style="stroke-width: 2;stroke-miterlimit: 10;"></line>
+						<line x1="45.1" y1="30.4" x2="0" y2="30.4" class="stroke-primary"
+							style="stroke-width: 2;stroke-miterlimit: 10;"></line>
+					</svg>
+
+				</div>
+				<div class="lg:px-14 md:px-10 px-5 md:pt-8 sm:py-4 py-2">
+					<ol>
+						<li class="flex justify-center md:pb-10 pb-5 mx-auto">
+							<div class="w-3/12 text-xs font-semibold uppercase tracking-wide text-slate-500 pr-20">
+								July 2022 — March 2023</div>
+							<div class="w-9/12 ">
+								<h3 class="font-medium text-slate-500">
+
+									<div>
+										<a class="inline-flex font-medium leading-tight text-gray-500 hover:text-primary focus-visible:text-primary md:text-base sm:text-sm text-xs"
+											href="https://pixbitsolutions.com" target="_blank" rel="noreferrer"
+											aria-label="Pixbit Solution"><span>Pixbit Solution</span></a>
+									</div>
+									<div class="text-primary md:text-lg sm:text-base text-sm font-medium">Frontend
+										Developer</div>
+								</h3>
+								<p class="mt-2  md:text-sm text-xs font-light leading-normal">Developed and styled
+									interactive web applications.</p>
+								<ul class="mt-2 flex flex-wrap" aria-label="Technologies used:">
+									<li class="mr-4"><a
+											class="relative mt-2 inline-flex items-center text-sm font-medium text-gray-500 hover:text-primary focus-visible:text-primary"
+											href="https://sravanahearingaidcentre.com" target="_blank"
+											rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+												fill="currentColor" class="mr-1 h-3 w-3" aria-hidden="true">
+												<path
+													d="M12.232 4.232a2.5 2.5 0 013.536 3.536l-1.225 1.224a.75.75 0 001.061 1.06l1.224-1.224a4 4 0 00-5.656-5.656l-3 3a4 4 0 00.225 5.865.75.75 0 00.977-1.138 2.5 2.5 0 01-.142-3.667l3-3z">
+												</path>
+												<path
+													d="M11.603 7.963a.75.75 0 00-.977 1.138 2.5 2.5 0 01.142 3.667l-3 3a2.5 2.5 0 01-3.536-3.536l1.225-1.224a.75.75 0 00-1.061-1.06l-1.224 1.224a4 4 0 105.656 5.656l3-3a4 4 0 00-.225-5.865z">
+												</path>
+											</svg><span>Sravana</span></a></li>
+									<li class="mr-4"><a
+											class="relative mt-2 inline-flex items-center text-sm font-medium text-gray-500 hover:text-primary focus-visible:text-primary"
+											href="https://globalbrandings.com" target="_blank" rel="noreferrer"><svg
+												xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+												fill="currentColor" class="mr-1 h-3 w-3" aria-hidden="true">
+												<path
+													d="M12.232 4.232a2.5 2.5 0 013.536 3.536l-1.225 1.224a.75.75 0 001.061 1.06l1.224-1.224a4 4 0 00-5.656-5.656l-3 3a4 4 0 00.225 5.865.75.75 0 00.977-1.138 2.5 2.5 0 01-.142-3.667l3-3z">
+												</path>
+												<path
+													d="M11.603 7.963a.75.75 0 00-.977 1.138 2.5 2.5 0 01.142 3.667l-3 3a2.5 2.5 0 01-3.536-3.536l1.225-1.224a.75.75 0 00-1.061-1.06l-1.224 1.224a4 4 0 105.656 5.656l3-3a4 4 0 00-.225-5.865z">
+												</path>
+											</svg><span>Global Branding</span></a></li>
+									<li class="mr-4"><a
+											class="relative mt-2 inline-flex items-center text-sm font-medium text-gray-500 hover:text-primary focus-visible:text-primary"
+											href="https://cakiyo.com" target="_blank" rel="noreferrer"><svg
+												xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+												fill="currentColor" class="mr-1 h-3 w-3" aria-hidden="true">
+												<path
+													d="M12.232 4.232a2.5 2.5 0 013.536 3.536l-1.225 1.224a.75.75 0 001.061 1.06l1.224-1.224a4 4 0 00-5.656-5.656l-3 3a4 4 0 00.225 5.865.75.75 0 00.977-1.138 2.5 2.5 0 01-.142-3.667l3-3z">
+												</path>
+												<path
+													d="M11.603 7.963a.75.75 0 00-.977 1.138 2.5 2.5 0 01.142 3.667l-3 3a2.5 2.5 0 01-3.536-3.536l1.225-1.224a.75.75 0 00-1.061-1.06l-1.224 1.224a4 4 0 105.656 5.656l3-3a4 4 0 00-.225-5.865z">
+												</path>
+											</svg><span>Cakiyo</span></a></li>
+								</ul>
+								<ul class="mt-2 flex flex-wrap md:w-6/12">
+									<li class="mr-1.5 mt-2">
+										<div
+											class="flex items-center rounded-full bg-white px-3 py-1 md:text-sm text-xs font-medium leading-5 text-primary">
+											HTML</div>
+									</li>
+									<li class="mr-1.5 mt-2">
+										<div
+											class="flex items-center rounded-full bg-white px-3 py-1 md:text-sm text-xs font-medium leading-5 text-primary">
+											CSS</div>
+									</li>
+									<li class="mr-1.5 mt-2">
+										<div
+											class="flex items-center rounded-full bg-white px-3 py-1 md:text-sm text-xs font-medium leading-5 text-primary">
+											JAVASCRIPT</div>
+									</li>
+									<li class="mr-1.5 mt-2">
+										<div
+											class="flex items-center rounded-full bg-white px-3 py-1 md:text-sm text-xs font-medium leading-5 text-primary">
+											JQUERY</div>
+									</li>
+									<li class="mr-1.5 mt-2">
+										<div
+											class="flex items-center rounded-full bg-white px-3 py-1 md:text-sm text-xs font-medium leading-5 text-primary">
+											TAILWIND CSS</div>
+									</li>
+									<li class="mr-1.5 mt-2">
+										<div
+											class="flex items-center rounded-full bg-white px-3 py-1 md:text-sm text-xs font-medium leading-5 text-primary">
+											BOOTSTRAP</div>
+									</li>
+									<li class="mr-1.5 mt-2">
+										<div
+											class="flex items-center rounded-full bg-white px-3 py-1 md:text-sm text-xs font-medium leading-5 text-primary">
+											PHOTOSHOP</div>
+									</li>
+									<li class="mr-1.5 mt-2">
+										<div
+											class="flex items-center rounded-full bg-white px-3 py-1 md:text-sm text-xs font-medium leading-5 text-primary">
+											ILLUSTRATOR</div>
+									</li>
+									<li class="mr-1.5 mt-2">
+										<div
+											class="flex items-center rounded-full bg-white px-3 py-1 md:text-sm text-xs font-medium leading-5 text-primary">
+											FIGMA</div>
+									</li>
+
+								</ul>
+							</div>
+						</li>
+						<li class="flex justify-center md:pb-10 pb-5">
+							<div class="w-3/12 text-xs font-semibold uppercase tracking-wide text-slate-500 pr-20">
+								May 2022 — July 2022</div>
+							<div class="w-9/12">
+								<h3 class="font-medium text-slate-500">
+
+									<div>
+										<a class="inline-flex items-baseline font-medium leading-tight text-gray-500 hover:text-primary focus-visible:text-primary md:text-base sm:text-sm text-xs"
+											href="https://limenzy.com/" target="_blank" rel="noreferrer"
+											aria-label="Pixbit Solution"><span>Limenzy Technologies</span></a>
+									</div>
+									<div class="text-primary md:text-lg sm:text-base text-sm font-medium">Frontend
+										Developer</div>
+								</h3>
+								<p class="mt-2  md:text-sm text-xs font-light leading-normal">Hubsport Development and
+									Frontend Development Training.</p>
+								<ul class="mt-2 flex flex-wrap md:w-6/12">
+									<li class="mr-1.5 mt-2">
+										<div
+											class="flex items-center rounded-full bg-white px-3 py-1 md:text-sm text-xs font-medium leading-5 text-primary">
+											HTML</div>
+									</li>
+									<li class="mr-1.5 mt-2">
+										<div
+											class="flex items-center rounded-full bg-white px-3 py-1 md:text-sm text-xs font-medium leading-5 text-primary">
+											CSS</div>
+									</li>
+									<li class="mr-1.5 mt-2">
+										<div
+											class="flex items-center rounded-full bg-white px-3 py-1 md:text-sm text-xs font-medium leading-5 text-primary">
+											JAVASCRIPT</div>
+									</li>
+									<li class="mr-1.5 mt-2">
+										<div
+											class="flex items-center rounded-full bg-white px-3 py-1 md:text-sm text-xs font-medium leading-5 text-primary">
+											JQUERY</div>
+									</li>
+
+									<li class="mr-1.5 mt-2">
+										<div
+											class="flex items-center rounded-full bg-white px-3 py-1 md:text-sm text-xs font-medium leading-5 text-primary">
+											BOOTSTRAP</div>
+									</li>
+									<li class="mr-1.5 mt-2">
+										<div
+											class="flex items-center rounded-full bg-white px-3 py-1 md:text-sm text-xs font-medium leading-5 text-primary">
+											PHOTOSHOP</div>
+									</li>
+
+									<li class="mr-1.5 mt-2">
+										<div
+											class="flex items-center rounded-full bg-white px-3 py-1 md:text-sm text-xs font-medium leading-5 text-primary">
+											HUBSPORT</div>
+									</li>
+
+								</ul>
+							</div>
+						</li>
+						<li class="flex justify-center md:pb-10 pb-5">
+							<div class="w-3/12 text-xs font-semibold uppercase tracking-wide text-slate-500 pr-20">
+								January 2022 — May 2023</div>
+							<div class="w-9/12">
+								<h3 class="font-medium text-slate-500">
+
+									<div>
+										<a class="inline-flex items-baseline font-medium leading-tight text-gray-500 hover:text-primary focus-visible:text-primary md:text-base sm:text-sm text-xs"
+											href="https://baabtra.com/" target="_blank" rel="noreferrer"
+											aria-label="Pixbit Solution"><span>Baabtra</span></a>
+									</div>
+									<div class="text-primary md:text-lg sm:text-base text-sm font-medium">Full Stack
+										Python Developer</div>
+								</h3>
+								<p class="mt-2  md:text-sm text-xs font-light leading-normal">Frontend and Backend
+									Development Intership.</p>
+								<ul class="mt-2 flex flex-wrap md:w-6/12">
+									<li class="mr-1.5 mt-2">
+										<div
+											class="flex items-center rounded-full bg-white px-3 py-1 md:text-sm text-xs font-medium leading-5 text-primary">
+											HTML</div>
+									</li>
+									<li class="mr-1.5 mt-2">
+										<div
+											class="flex items-center rounded-full bg-white px-3 py-1 md:text-sm text-xs font-medium leading-5 text-primary">
+											CSS</div>
+									</li>
+									<li class="mr-1.5 mt-2">
+										<div
+											class="flex items-center rounded-full bg-white px-3 py-1 md:text-sm text-xs font-medium leading-5 text-primary">
+											JAVASCRIPT</div>
+									</li>
+									<li class="mr-1.5 mt-2">
+										<div
+											class="flex items-center rounded-full bg-white px-3 py-1 md:text-sm text-xs font-medium leading-5 text-primary">
+											JQUERY</div>
+									</li>
+									<li class="mr-1.5 mt-2">
+										<div
+											class="flex items-center rounded-full bg-white px-3 py-1 md:text-sm text-xs font-medium leading-5 text-primary">
+											BOOTSTRAP</div>
+									</li>
+									<li class="mr-1.5 mt-2">
+										<div
+											class="flex items-center rounded-full bg-white px-3 py-1 md:text-sm text-xs font-medium leading-5 text-primary">
+											PYTHON</div>
+									</li>
+									<li class="mr-1.5 mt-2">
+										<div
+											class="flex items-center rounded-full bg-white px-3 py-1 md:text-sm text-xs font-medium leading-5 text-primary">
+											DJANGO</div>
+									</li>
+									<li class="mr-1.5 mt-2">
+										<div
+											class="flex items-center rounded-full bg-white px-3 py-1 md:text-sm text-xs font-medium leading-5 text-primary">
+											POSTGRES SQL</div>
+									</li>
+									<li class="mr-1.5 mt-2">
+										<div
+											class="flex items-center rounded-full bg-white px-3 py-1 md:text-sm text-xs font-medium leading-5 text-primary">
+											AJAX</div>
+									</li>
+									<li class="mr-1.5 mt-2">
+										<div
+											class="flex items-center rounded-full bg-white px-3 py-1 md:text-sm text-xs font-medium leading-5 text-primary">
+											JSON</div>
+									</li>
+									<li class="mr-1.5 mt-2">
+										<div
+											class="flex items-center rounded-full bg-white px-3 py-1 md:text-sm text-xs font-medium leading-5 text-primary">
+											GIT/GITHUB</div>
+									</li>
+
+								</ul>
+							</div>
+						</li>
+
+					</ol>
+				</div>
+		</section>
+
+		<section id="contact" class="w-full xl:relative bg-white">
+			<div class="container mx-auto max-w-7xl xl:px-0 lg:px-14 md:px-10 px-5 md:py-20 py-10">
+				<div class="text-center mx-auto">
+					<h2 class="md:text-3xl sm:text-2xl text-xl font-medium text-black">Contact</h2>
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+						x="0px" y="0px" viewBox="0 0 100 60" style="margin: 0 auto;height: 35px;" xml:space="preserve">
+						<circle cx="50.1" cy="30.4" r="5" class="stroke-primary"
+							style="fill: transparent;stroke-width: 2;stroke-miterlimit: 10;"></circle>
+						<line x1="55.1" y1="30.4" x2="100" y2="30.4" class="stroke-primary"
+							style="stroke-width: 2;stroke-miterlimit: 10;"></line>
+						<line x1="45.1" y1="30.4" x2="0" y2="30.4" class="stroke-primary"
+							style="stroke-width: 2;stroke-miterlimit: 10;"></line>
+					</svg>
+					<!-- contact start -->
+					<div class="container xl:max-w-6xl mx-auto px-4 md:pt-8 sm:py-4 py-2">
+						<div class="flex flex-wrap flex-row -mx-4 justify-center">
+							<div class="max-w-ful px-4 w-full lg:w-8/12">
+								<div class="bg-light shadow-0xl w-full p-12 wow fadeInUp" data-wow-duration="1s"
+									data-wow-delay=".5s">
+
+									<!-- contact form -->
+									<form action="#" method="POST">
+										{% csrf_token %}
+										<div class="flex flex-wrap flex-row -mx-4">
+											<div class="flex-shrink w-full max-w-full md:w-1/2 px-4 mb-6">
+												<label class="inline-block mb-2" for="fname">First Name</label>
+												<input type="text" name="fname"
+													class="w-full leading-5 relative py-3 px-5 rounded text-gray-500 bg-white shadow-3xl overflow-x-auto focus:outline-primary focus:ring-0"
+													id="fname">
+												<div class="validate"></div>
+											</div>
+											<div class="flex-shrink w-full max-w-full md:w-1/2 px-4 mb-6">
+												<label class="inline-block mb-2" for="lname">Last Name</label>
+												<input type="text"
+													class="w-full leading-5 relative py-3 px-5 rounded text-gray-500 bg-white shadow-3xl overflow-x-auto focus:outline-primary focus:ring-0"
+													name="lname" id="lname">
+												<div class="validate"></div>
+											</div>
+										</div>
+										<div class="flex flex-wrap flex-row -mx-4">
+											<div class="flex-shrink w-full max-w-full md:w-1/2 px-4 mb-6">
+												<label class="inline-block mb-2" for="phone">Mobile</label>
+												<input type="text" name="phone"
+													class="w-full leading-5 relative py-3 px-5 rounded text-gray-500 bg-white shadow-3xl overflow-x-auto focus:outline-primary focus:ring-0"
+													id="phone">
+												<div class="validate"></div>
+											</div>
+											<div class="flex-shrink w-full max-w-full md:w-1/2 px-4 mb-6">
+												<label class="inline-block mb-2" for="email">Email</label>
+												<input type="email"
+													class="w-full leading-5 relative py-3 px-5 rounded text-gray-500 bg-white shadow-3xl overflow-x-auto focus:outline-primary focus:ring-0"
+													name="email" id="email">
+												<div class="validate"></div>
+											</div>
+										</div>
+										<div class="mb-6">
+											<label class="inline-block mb-2" for="messages">Message</label>
+											<textarea
+												class="w-full leading-5 relative py-3 px-5 rounded text-gray-500 bg-white shadow-3xl overflow-x-auto focus:outline-primary focus:ring-0"
+												name="message" rows="10" id="messages"></textarea>
+											<div class="validate"></div>
+										</div>
+										<div class="text-center mb-6">
+											<button
+												class="md:py-2.5 py-1.5 md:px-10 px-5 inline-block font-medium text-center text-white border borde-primary bg-primary hover:text-primary hover:border-primary hover:bg-white"
+												href="/" type="submit">
+												<svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem"
+													class="inline-block mr-1" fill="currentColor" viewBox="0 0 512 512">
+													<rect x="48" y="96" width="416" height="320" rx="40" ry="40"
+														style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+													<polyline points="112 160 256 272 400 160"
+														style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+												</svg>
+												Send message
+											</button>
+										</div>
+									</form><!-- end contact form -->
+								</div>
+							</div>
+						</div>
+					</div><!-- End contact -->
+				</div>
+			</div>
+		</section>
+	</main>
+	<!-- Main end -->
+
+	<!-- Footer start -->
+	<footer class="z-50 w-full">
+		<div class="bg-light shadow-3xl">
+			<div
+				class="container items-center mx-auto max-w-7xl xl:px-0 lg:px-14 md:px-10 px-5 text-primary text-center md:py-5 py-2.5 md:text-sm text-xs">
+				<span>© Copyright 2023. All right reserved, by <a href="https://pavithracaz.com"
+						target="_blank">Pavithra Caz</a></span>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer end -->
+
+	<!-- Script Start -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="{% static 'js/script.js' %}"></script>
+	<!-- Script end -->
+</body>
+
+</html>
